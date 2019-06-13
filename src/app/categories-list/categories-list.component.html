@@ -1,0 +1,11 @@
+<div class="categories-list-container">
+  <div>
+    <span class="categories-list-title">Categoria:</span>
+  </div>
+  <div class="categories-list-group">
+    <span class="categories-group-item categories-list-text" *ngFor="let category of categories"
+      (click)="openList(category)">
+      {{category.name}}
+    </span>
+  </div>
+</div>
